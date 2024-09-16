@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+
+}
+.sticky {
+    position: fixed;
+}
+.dark_mode {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 920px;
+}
+
+.dark {
+    --bg-color: #09142b;
+    --text-color: azure;
+}
+
+.toggler-container {
+    padding-top: 10px;
+    width: 50px;
+    height: 15px;
+    border-radius: 60px;
+    background-color: #232323;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.toggler {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ababab;
+    margin: 5px;
+    transition: transform 0.5s , background-color 0.5s , box-shadow 0.5s;
+}
+
+#switch:checked + .toggler-container .toggler {
+    transform: translateX(25px);
+    background-color: white;
+    box-shadow: 0 0 10px white,
+    0 0 20px white;
+}
+.navbar {
+    display: flex;
+    position: absolute;
+}
+.mode {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 150px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    text-transform: uppercase;
+    padding: 0px 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    position: fixed;
+    margin-left: 45px;
+    color: #fcc006;
+    margin-right: 900px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    padding-left:1300px;
+    
+}
+
+.nav ul li {
+    font-weight: bolder;
+    display: inline-block;
+    margin: 10px 20px;
+    position: relative;
+    
+    
+}
+.nav ul li a {
+    text-decoration: none;
+    color: inherit;
+
+    
+    
+
+}
+
+.nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fcc006;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+.header{
+    padding: 220px 200px;
+    font-family: monospace;
+    position: absolute;
+    margin: 20px;
+}
+
+.header p {
+    font-size: 25px;
+}
+
+.header h1 {
+    font-size: 75px;
+    margin:5px 0;
+}
+
+.header h1 span{
+    color: #fcc006;
+   
+} 
+
+.header h3 {
+    margin: 10px 0;
+}
+
+.bg {
+    display: flex;
+    justify-content: flex-end;;
+}
+
+.bg img {
+    width: 600px;
+    padding-top: 80px;
+    padding-right: 100px;
+}
+
+.buttons {
+    margin: 40px;
+    width: auto;
+}
+
+.projects {
+    margin-left: 170px;
+    margin-right: 70px;
+    padding: 4px 13px;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: inherit;
+    color: inherit;
+    border-color: inherit;
+    
+}
+
+.linkedin {
+    padding: 4px 13px;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: inherit;
+    color: inherit;
+    border-color: inherit;
+}
+
+
+.Project {
+    position: relative;
+}
+.title_1 {
+    font-size: 75px;
+    color: #fcc006;
+    text-align: center;
+    margin-top: 200px;
+    font-weight: bolder;
+}
+
+.Project_1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.Project_1_details {
+    padding: 30px;
+    margin: 0px 0px 0px 500px;
+    width: auto;
+}
+.Project_1_details h1 {
+    padding: 50px;
+    text-align: center;
+    color: #fcc006;
+    
+}
+
+.Project_1_img {
+    width: 450px;
+    height: 450px;
+    margin: 0 500px 0 0;
+    border-radius: 500px;
+    font-weight: bolder;
+}
+
+.btn_1 {
+    margin-top: 40px;
+    margin-left: 130px;
+    margin-right: 70px;
+    padding: 4px 13px;
+    border-radius: 50px;
+    background-color: inherit;
+    color: inherit;
+    border-color: inherit;
+    font-weight: bolder;
+}
+
+
+.Project_2_details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.Project_2_img {
+    width: 450px;
+    height: 450px;
+    margin: 0 0 0 500px;
+    border-radius: 500px;
+}
+
+.script_1 {
+    padding: 30px;
+    margin: 0px 500px 0px 0px;
+}
+
+.script_1 h1 {
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
+    color: #fcc006;
+}
+
+.btn_2 {
+    margin-top: 40px;
+    margin-left: 130px;
+    margin-right: 70px;
+    padding: 4px 13px;
+    border-radius: 50px;
+    background-color: inherit;
+    color: inherit;
+    border-color: inherit;
+    font-weight: bolder;
+}
+
+.Project_3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Project_3_details {
+    margin-top: 30px;
+    padding: 30px;
+    margin: 0px 0px 0px 500px;
+    width: 600px;
+}
+.Project_3_details h1 {
+    padding: 50px;
+    margin-left: 70px;
+    color: #fcc006;
+    
+}
+
+.Project_3_img {
+    width: 450px;
+    height: 450px;
+    margin: 0 500px 0 0;
+    border-radius: 500px;
+    font-weight: bolder;
+}
+
+.btn_3 {
+    margin-top: 40px;
+    margin-left: 130px;
+    margin-right: 70px;
+    padding: 4px 13px;
+    border-radius: 50px;
+    background-color: inherit;
+    color: inherit;
+    border-color: inherit;
+    font-weight: bolder;
+}
+
+
+.contacts {
+    margin: 300px;
+    padding-bottom: 90px;
+    text-align: center;
+
+}
+
+.fa-brands.fa-instagram.fa-2x {
+    margin-top: 150px;
+    margin-left: 780px;
+    margin-right: 20px;
+    padding: 4px 13px;
+    border-radius: 50px;
+    background-color: #041433;
+    color: #f1f5fa;
+    font-weight: bold;
+    box-shadow: -6px -6px 10px #11254e,
+    6px 6px 10px #000a1f;
+    border: none;
+
+}
+
+.fa-brands.fa-instagram.fa-2x:hover {
+    box-shadow: 2px 2px 2px #11254e,
+    -2px -2px 2px #000a1f;
+
+
+}
+
+.fa-brands.fa-linkedin-in.fa-2x {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 4px 13px;
+    border-radius: 50px;
+    background-color: #041433;
+    color: #f1f5fa;
+    font-weight: bold;
+    box-shadow: -6px -6px 10px #11254e,
+    6px 6px 10px #000a1f;
+    border: none;
+
+}
+
+.fa-brands.fa-linkedin-in.fa-2x:hover {
+    box-shadow: 2px 2px 2px #11254e,
+    -2px -2px 2px #000a1f;
+
+
+}
+
+.fa-regular.fa-envelope.fa-2x {
+    margin-top: 40px;
+    margin-left: 20px;
+    padding: 4px 13px;
+    border-radius: 50px;
+    background-color: #041433;
+    color: #f1f5fa;
+    font-weight: bold;
+    box-shadow: -6px -6px 10px #11254e,
+    6px 6px 10px #000a1f;
+    border: none;
+
+}
+
+.fa-regular.fa-envelope.fa-2x:hover {
+    box-shadow: 2px 2px 2px #11254e,
+    -2px -2px 2px #000a1f;
+
+
+}
+
+section {
+    min-height: 40vh;
+    
+}
